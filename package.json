@@ -1,0 +1,13 @@
+{
+  "name": "turnos-pileta",
+  "private": true,
+  "type": "module",
+  "description": "Turnero de pileta libre. La app no necesita compilarse: estas dependencias son solo para correr las pruebas.",
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\"",
+    "start": "npx --yes http-server . -p 5500 -c-1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.0"
+  }
+}
