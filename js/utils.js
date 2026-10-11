@@ -112,6 +112,7 @@ const MESSAGES = {
   INVALID_DOCUMENT: 'Revisá el documento: entre 6 y 12 números (o letras y números si es pasaporte).',
   NOT_AUTHORIZED: 'Tu usuario no tiene permiso para usar el panel.',
   LOGIN_FAILED: 'Email o contraseña incorrectos.',
+  EMAIL_NOT_CONFIRMED: 'El usuario existe pero no está confirmado. En Supabase → Authentication → Users, confirmalo o crealo de nuevo con «Auto Confirm User».',
   CAPACITY_BELOW_RESERVED: (n) => `La capacidad no puede ser menor que las reservas activas (${n}).`,
   SLOT_EXISTS: 'Ya existe un horario que empieza a esa hora ese día.',
   SLOT_IN_PAST: 'No se pueden crear horarios en el pasado.',

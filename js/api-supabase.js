@@ -93,7 +93,11 @@ export const api = {
 
   async signIn(email, password) {
     const { error } = await sb.auth.signInWithPassword({ email, password });
-    if (error) throw error.status === 400 ? new AppError('LOGIN_FAILED') : toAppError(error);
+    if (!error) return;
+    const known = { email_not_confirmed: 'EMAIL_NOT_CONFIRMED', invalid_credentials: 'LOGIN_FAILED' }[error.code];
+    if (known) throw new AppError(known);
+    console.error(error);
+    throw error.status === 400 ? new AppError('LOGIN_FAILED') : toAppError(error);
   },
 
   async signOut() {
