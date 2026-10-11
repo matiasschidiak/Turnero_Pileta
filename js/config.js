@@ -7,8 +7,8 @@
 // Si los dejás vacíos, la app funciona en MODO DEMO: los datos se guardan
 // solo en este navegador. Sirve para probarla, no para usarla de verdad.
 export const CONFIG = {
-  supabaseUrl: '',
-  supabaseAnonKey: '',
+  supabaseUrl: 'https://byigafutnpmjpflnjdvz.supabase.co',
+  supabaseAnonKey: 'sb_publishable_vpITq_ggp-GGHIwwUe0CKQ_R85mgUaY',
 
   nombreComplejo: 'Pileta libre',
   // Se muestra debajo del título grande de la página de reservas.
